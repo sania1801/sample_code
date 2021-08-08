@@ -1,0 +1,41 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+
+#name: CI
+#on: [push]
+
+#jobs:
+#  build:
+#    runs-on: ubuntu-latest
+#    steps:
+#
+#      - uses: actions/checkout@v1
+#
+#      - name: Rubocop checks
+#          uses: luizfonseca/github-actions-rubocop@1.5.5
+#          env:
+#            GITHUB_TOKEN: ${{ Rails.aplication.credentials[:GITHUB_TOKEN] }}
+AllCops:
+  NewCops: enable
+  Exclude:
+    - db/schema.rb
+    - db/migrate/**
+    - node_modules/**/*
+    - bin/**/*
+    - tmp/*
+Style/Documentation:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - app/admin/**/*
+    - app/api/**/*
+    - spec/**/*
+Lint/MissingSuper:
+  Enabled: false
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - staging
+    - production

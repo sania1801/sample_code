@@ -1,0 +1,84 @@
+ru:
+  time:
+    formats:
+      long: "%d/%m/%Y %H:%M"
+  application:
+    name: 100km
+  formtastic:
+    :update: 'Обновить %{model}'
+    :create: 'Создать %{model}'
+  activerecord:
+    models:
+      measure: Единица времени
+      measures: Единицы времени
+      cost: Цена
+      costs: Цена
+      grade: Класс
+      grades: Классы
+      fuel_type: Тип топлива
+      fuel_types: Типы топлива
+      help_request: Вопрос пользователя
+      help_requests: Вопросы пользователей
+      faq_category: Категория ЧЗ вопроса
+      faq_categories: Категории ЧЗ вопросов
+      faq_question: ЧЗ вопрос
+      faq_questions: ЧЗ вопросы
+      car: Машина
+      cars: Машины
+      user: Пользователь
+      users: Пользователи
+    attributes:
+      user:
+        email: Почта
+        name: Имя
+        last_name: Фамилия
+        legal_entity: Юр. лицо
+        sign_in_count: Кол-во входов
+        current_sign_in: Текущий вход
+        last_sign_in_at: Последний вход в
+        phone: Телефон
+      car:
+        created_at: Создано в
+        updated_at: Обновлено в
+        name: Название
+        year: Год выпуска
+        power: Мощность
+        consumption: Расход
+        fuel_type: Тип топлива
+        cost: Цена
+        grade: Класс
+        status: Статус
+      measure:
+        created_at: Создано в
+        updated_at: Обновлено в
+        name: Название
+      cost:
+        created_at: Создано в
+        updated_at: Обновлено в
+        amount: Цена
+        measure: Единица времени
+      grade:
+        created_at: Создано в
+        updated_at: Обновлено в
+        name: Название
+      fuel_type:
+        created_at: Создано в
+        updated_at: Обновлено в
+        name: Название
+        specification: Спецификация
+      help_request:
+        created_at: Создано в
+        updated_at: Обновлено в
+        first_name: Имя
+        phone: Телефон
+        question: Вопрос
+      faq_category:
+        created_at: Создано в
+        updated_at: Обновлено в
+        name: Название
+      faq_question:
+        created_at: Создано в
+        updated_at: Обновлено в
+        question: Вопрос
+        answer: Ответ
+        faq_category: Категория

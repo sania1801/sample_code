@@ -1,0 +1,6 @@
+#mode_ci:
+#  enabled: true
+#  branch: develop
+#branch: develop
+threshold_score: 10
+minimum_score: 95

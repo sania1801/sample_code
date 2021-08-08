@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@api": [
+        "api"
+      ],
+      "@api/*": [
+        "api/*"
+      ],
+      "@components": [
+        "components"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@locales": [
+        "locales"
+      ],
+      "@locales/*": [
+        "locales/*"
+      ],
+      "@pages": [
+        "pages"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@public": [
+        "public"
+      ],
+      "@public/*": [
+        "public/*"
+      ],
+      "@store": [
+        "store"
+      ],
+      "@store/*": [
+        "store/*"
+      ],
+      "@data/*": [
+        "data/*"
+      ],
+      "@styles": [
+        "styles"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@fonts": [
+        "fonts"
+      ],
+      "@fonts/*": [
+        "fonts/*"
+      ],
+      "@utils": [
+        "utils"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
+    }
+  }
+}

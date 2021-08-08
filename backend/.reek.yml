@@ -1,0 +1,6 @@
+detectors:
+  IrresponsibleModule:
+    enabled: false
+  UncommunicativeModuleName:
+    exclude:
+      - 'ServicesRentWork::V1'
