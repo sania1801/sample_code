@@ -15,7 +15,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
+    ecmaVersion: 11,
     sourceType: 'module',
   },
   plugins: [
@@ -50,7 +50,7 @@ module.exports = {
     }],
     'import/prefer-default-export': 'off',
   },
-  ignorePatterns: ['*.svg'],
+  ignorePatterns: ['*.svg', '*.txt', '*.xml'],
   settings: {
     'import/resolver': {
       alias: [
@@ -83,10 +83,6 @@ module.exports = {
           path.resolve(__dirname, 'components/organisms'),
         ],
         [
-          '@modals',
-          path.resolve(__dirname, 'components/modals'),
-        ],
-        [
           '@molecules',
           path.resolve(__dirname, 'components/molecules'),
         ],
@@ -109,6 +105,10 @@ module.exports = {
         [
           '@api',
           path.resolve(__dirname, 'api'),
+        ],
+        [
+          '@hooks',
+          path.resolve(__dirname, 'hooks'),
         ],
       ],
     },

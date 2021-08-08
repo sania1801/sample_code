@@ -1,0 +1,24 @@
+@import "@styles/variables"
+@import "@styles/mixins"
+
+.link
+  &.active
+    font-weight: 800
+
+  @media (hover: none)
+    display: flex
+    align-items: center
+
+    &::after
+      content: '\e800'
+      font-family: $font-icon
+      font-size: 1.2rem
+      line-height: 1.2rem
+      margin-left: 8px
+
+.linkText
+  font-size: 1.4rem
+  line-height: 1.9rem
+  letter-spacing: 2px
+  text-transform: uppercase
+  +linkUnderline($color-black)

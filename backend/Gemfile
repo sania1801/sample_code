@@ -25,6 +25,7 @@ gem 'grape-swagger-entity'
 gem 'grape-swagger-rails'
 gem 'phonelib'
 gem 'rack-cors'
+gem 'sass-rails'
 
 # Configuration
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
