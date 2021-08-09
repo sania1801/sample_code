@@ -22,7 +22,10 @@ const Contacts = ({
     </div>
     )}
     {isCallCenterTitle && (
-    <p className={`${styles.title} ${titleClass}`}>{`${i18n.t('navigation.contacts.callCenter')}:`}</p>
+    <p className={`${styles.title} ${titleClass}`}>
+      {i18n.t('navigation.contacts.callCenter')}
+      :
+    </p>
     )}
     <div className={contactsContainerClass}>
       <a

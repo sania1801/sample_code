@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import styles from './styles.module.sass'
 
 const StaticSubtitle = ({ subtitle }) => (
-  <h2 className={styles.subtitle}>
+  <p className={styles.subtitle}>
     {subtitle}
-  </h2>
+  </p>
 )
 
 StaticSubtitle.propTypes = {

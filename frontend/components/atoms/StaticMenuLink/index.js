@@ -8,6 +8,7 @@ const StaticMenuLink = ({
   anchor,
   text,
   offset,
+  duration,
 }) => (
   <Link
     key={anchor}
@@ -16,7 +17,7 @@ const StaticMenuLink = ({
     spy
     smooth
     offset={offset}
-    duration={500}
+    duration={duration}
     activeClass="active"
   >
     <span className={styles.linkText}>{text}</span>
@@ -28,11 +29,13 @@ StaticMenuLink.propTypes = {
   anchor: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   offset: PropTypes.number,
+  duration: PropTypes.number
 }
 
 StaticMenuLink.defaultProps = {
   className: '',
   offset: 0,
+  duration: 500,
 }
 
 export default StaticMenuLink

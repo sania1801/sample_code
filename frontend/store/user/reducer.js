@@ -5,7 +5,7 @@ import {
 
 export const initialState = {
   errors: null,
-  all: [],
+  listAllUsers: [],
 }
 
 export default function reducer(state = initialState, action) {
@@ -13,7 +13,7 @@ export default function reducer(state = initialState, action) {
     case SUCCESS_GET_ALL_USERS:
       return {
         ...state,
-        all: action.users,
+        listAllUsers: action.users,
       }
     case GET_ALL_USERS_ERROR:
       return {

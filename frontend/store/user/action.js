@@ -3,7 +3,7 @@ import { SUCCESS_GET_ALL_USERS, GET_ALL_USERS_ERROR } from '@store/user/constant
 
 const api = new UserAPI()
 
-export const getAll = () => (
+export const getAllUsers = () => (
   (dispatch) => {
     api.getAllUsers()
       .then((response) => {

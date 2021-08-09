@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import { getAll } from '@store/user/action'
+import { getAllUsers } from '@store/user/action'
 import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import i18n from '@locales/index'
@@ -29,11 +29,11 @@ const HomePage = ({
 }
 
 const mapStateToProps = (state) => ({
-  users: state.user.all,
+  users: state.user.listAllUsers,
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  setUsers: getAll,
+  setUsers: getAllUsers,
 }, dispatch)
 
 HomePage.propTypes = {

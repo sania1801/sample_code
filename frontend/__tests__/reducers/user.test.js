@@ -14,11 +14,11 @@ describe('user reducer', () => {
     expect(
       reducer(initialState, {
         type: SUCCESS_GET_ALL_USERS,
-        users: [{ id: 1, name: 'Test'}],
+        users: [{ id: 1, name: 'Test' }],
       }),
     ).toEqual({
       ...initialState,
-      users: [{ id: 1, name: 'Test'}],
+      listAllUsers: [{ id: 1, name: 'Test' }],
       errors: null,
     })
   })
@@ -31,7 +31,7 @@ describe('user reducer', () => {
       }),
     ).toEqual({
       ...initialState,
-      users: [],
+      listAllUsers: [],
       errors: { email: 'error' },
     })
   })
