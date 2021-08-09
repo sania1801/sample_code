@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
-import { test } from '@store/user/action'
+import { getAll } from '@store/user/action'
 import PropTypes from 'prop-types'
 import { bindActionCreators } from 'redux'
 import i18n from '@locales/index'
@@ -21,13 +21,7 @@ const HomePage = ({
       </h1>
       {users.map(({ id, name, surname }) => (
         <h2 key={id}>
-          {i18n.t('hello')}
-          ,
-          {' '}
-          {name}
-          {' '}
-          {surname}
-          !
+          {`${i18n.t('hello')} ${name} ${surname} !`}
         </h2>
       ))}
     </div>
@@ -35,11 +29,11 @@ const HomePage = ({
 }
 
 const mapStateToProps = (state) => ({
-  users: state.user.users,
+  users: state.user.all,
 })
 
 const mapDispatchToProps = (dispatch) => bindActionCreators({
-  setUsers: test,
+  setUsers: getAll,
 }, dispatch)
 
 HomePage.propTypes = {
