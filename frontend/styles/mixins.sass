@@ -1,0 +1,84 @@
+@mixin media-width-between($min, $max)
+  @media (min-width: $min) and (max-width: $max)
+    @content
+
+@mixin media-width-above($min)
+  @media (min-width: $min)
+    @content
+
+@mixin media-width-below($max)
+  @media (max-width: $max)
+    @content
+
+@mixin media-small //extra small mobile
+  @include media-width-below($small)
+    @content
+
+@mixin media-mob //mobile
+  @include media-width-below($mob)
+    @content
+
+@mixin media-tp //tablet portrait
+  @include media-width-below($tp)
+    @content
+
+@mixin media-tl //tablet landscape
+  @include media-width-below($tl)
+    @content
+
+@mixin placeholder
+  &::placeholder
+    @content
+
+@mixin linkUnderline($color)
+  color: $color
+  background-image: linear-gradient(transparent, transparent), linear-gradient(transparent, transparent), linear-gradient($color, $color)
+  background-size: 20px 1px, 100% 1px, 0 1px
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%
+  background-repeat: no-repeat
+  transition: background-size 0.3s linear, background-position 0.3s linear
+
+  @media (hover: hover)
+    &:hover
+      background-size: 20px 1px, 0 1px, 100% 1px
+      background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%
+
+@mixin title
+  font-size: 4rem
+  line-height: 5.4rem
+  font-weight: 800
+  letter-spacing: 2px
+  text-transform: uppercase
+
+  +media-mob
+    font-size: 3.2rem
+    line-height: 3.7rem
+
+@mixin subtitle
+  font-size: 2.4rem
+  line-height: 3.2rem
+  font-weight: 800
+  letter-spacing: 2px
+  text-transform: uppercase
+
+  +media-mob
+    font-size: 1.8rem
+    line-height: 2.4rem
+    letter-spacing: 1.4px
+
+@mixin custom-scroll
+  scrollbar-color: $color-black transparent
+  scrollbar-width: thin
+
+  &::-webkit-scrollbar
+    width: 3px
+    height: 2px
+
+  &::-webkit-scrollbar-track
+    background: transparent
+
+  &::-webkit-scrollbar-thumb
+    background: $color-black
+
+  &::-webkit-scrollbar-thumb:hover
+    background: $color-black

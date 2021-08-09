@@ -1,0 +1,22 @@
+@import "@styles/variables"
+@import "@styles/mixins"
+
+.contacts
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.title
+  font-size: 1.2rem
+  line-height: 1.6rem
+  text-transform: uppercase
+
+.contactLink
+  font-size: 1.4rem
+  line-height: 1.9rem
+  letter-spacing: 0.5px
+  color: inherit
+  text-decoration: none
+  +linkUnderline($color-black)
+  &.white
+    +linkUnderline($color-white)

@@ -1,0 +1,19 @@
+@import "@styles/variables"
+@import "@styles/mixins"
+
+.container
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  height: 100%
+
+.link
+  cursor: pointer
+  &:not(:last-child)
+    margin-bottom: 24px
+
+    +media-tp
+      margin-bottom: 12px
+
+  &:global(.active)
+    font-weight: 800

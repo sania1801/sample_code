@@ -1,0 +1,101 @@
+@import "@styles/variables"
+@import "@styles/mixins"
+
+.container
+  height: 100%
+  position: relative
+  display: flex
+
+  +media-tp
+    flex-direction: column
+
+.title
+  position: absolute
+  top: 50px
+  left: 457px
+  padding-right: 50px
+  +title
+
+  +media-tp
+    position: static
+    padding: 40px 128px 0
+    margin-bottom: 40px
+
+  +media-mob
+    padding: 30px 20px 0
+    margin-bottom: 32px
+
+.menu
+  position: fixed
+  top: 8.4rem
+  left: 0
+  width: 342px
+  padding: 60px 50px
+  border-right: 1px solid $color-black
+
+  +media-tp
+    position: static
+    width: 100%
+    padding: 0 128px
+    margin-bottom: 40px
+    border: 0
+
+  +media-mob
+    padding: 0 20px 0
+    margin-bottom: 32px
+
+.content
+  width: calc(100% - 342px)
+  margin-left: 342px
+  padding-top: 144px
+
+  +media-tp
+    width: 100%
+    margin-left: 0
+    padding-top: 0
+
+.infoContainer
+  padding: 0 115px 70px
+  border-bottom: 1px solid $color-black
+
+  +media-tp
+    padding: 0 128px 60px
+
+  +media-mob
+    padding: 0 20px 30px
+
+.contacts
+  padding: 60px 115px
+
+  +media-tp
+    padding: 48px 128px
+
+  +media-mob
+    padding: 40px 20px
+
+.contactsQuestion
+  font-size: 1.6rem
+  line-height: 2rem
+  font-weight: 600
+  margin-bottom: 20px
+
+.contactsText
+  font-size: 1.2rem
+  line-height: 1.6rem
+  font-weight: 300
+  letter-spacing: 0.02em
+  margin-top: 4px
+
+.contactsLinkContainer
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.contactsLink
+  display: inline-block
+  font-size: 1.4rem
+  line-height: 1.9rem
+  letter-spacing: 0.5px
+
+  &:not(:last-child)
+    margin-bottom: 12px

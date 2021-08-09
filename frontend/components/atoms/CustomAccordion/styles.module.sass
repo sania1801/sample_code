@@ -1,0 +1,52 @@
+@import "@styles/variables"
+@import "@styles/mixins"
+
+.accordion
+  width: 100%
+
+.heading
+  justify-content: space-between
+  display: flex
+  &[aria-expanded='true']
+    .icon:before
+      content: "\e812"
+
+  &[aria-expanded='false']
+    .icon:before
+      content: "\e814"
+
+.headingMob
+  outline: none
+  display: none
+  justify-content: space-between
+  align-items: center
+
+  +media-mob
+    display: flex
+    &[aria-expanded='true']
+      .icon:before
+        content: "\e812"
+
+    &[aria-expanded='false']
+      .icon:before
+        content: "\e814"
+
+.icon
+  font-family: $font-icon
+  font-size: 1.8rem
+  line-height: 1.8rem
+
+.containerMob
+  display: flex
+  flex-direction: column
+
+  & > div
+    width: 100%
+
+  +media-mob
+    &[hidden]
+      display: none
+
+.container
+  &[hidden]
+    display: none

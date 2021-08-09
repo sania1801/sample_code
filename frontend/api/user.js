@@ -1,7 +1,7 @@
 import { AxiosClient } from '../constants'
 
 export default class UserAPI {
-  test() {
+  getAllUsers() {
     return AxiosClient.get('/users')
   }
 }

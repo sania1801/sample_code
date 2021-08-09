@@ -7,6 +7,7 @@ module ServicesRentWork
 
       version 'v1' do
         mount ServicesRentWork::V1::Users
+        mount ServicesRentWork::V1::FaqCategories
       end
     end
   end

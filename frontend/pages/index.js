@@ -1,9 +1,12 @@
 import React from 'react'
 import Layout from '@components/templates/Layout'
+import HomePage from "@organisms/HomePage";
 
 const Home = () => {
   return (
-    <Layout></Layout>
+    <Layout>
+      <HomePage />
+    </Layout>
   )
 }
 

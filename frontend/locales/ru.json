@@ -1,3 +1,11 @@
 {
-  "hello":  "Привет"
+  "hello": "Привет",
+  "screens": {
+    "faq": {
+      "title": "Часто задаваемые вопросы"
+    }
+  },
+  "contacts": {
+    "mainPhone": "+375 29 xxx-xx-xx"
+  }
 }
